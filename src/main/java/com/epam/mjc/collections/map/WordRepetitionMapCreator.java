@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.regex.Pattern;
 
 public class WordRepetitionMapCreator {
-    private final static Pattern WORDS_PATTERN = Pattern.compile("[a-zA-Z]+");
+    private static final Pattern WORDS_PATTERN = Pattern.compile("[a-zA-Z]+");
 
     public Map<String, Integer> createWordRepetitionMap(String sentence) {
         var matcher = WORDS_PATTERN.matcher(sentence);
